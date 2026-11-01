@@ -1,0 +1,63 @@
+# ==========================================
+# MAVEN
+# ==========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# ==========================================
+# INTELLIJ IDEA
+# ==========================================
+.idea/
+*.iml
+*.iws
+
+# ==========================================
+# JAVA
+# ==========================================
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# SPRING BOOT
+# ==========================================
+spring-boot-devtools.properties
+
+# ==========================================
+# CONFIGURACIONES LOCALES Y SECRETOS
+# ==========================================
+.env
+.env.*
+!.env.example
+
+application-local.yaml
+application-local.yml
+application-local.properties
+
+# ==========================================
+# CERTIFICADOS Y CLAVES
+# ==========================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# ==========================================
+# SISTEMA OPERATIVO
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# BACKUPS
+# ==========================================
+*.bak
+*.tmp
+*.swp
+*~

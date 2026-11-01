@@ -1,10 +1,10 @@
 spring:
   application:
-    name: escuela
+    name: ESCUELA
   datasource:
     url: jdbc:mysql://localhost:3306/ESCUELA
-    username: root
-    password: "1234"
+    username: app_escuela
+    password: "3381nBAA?h|"
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
