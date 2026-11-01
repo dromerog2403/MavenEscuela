@@ -8,11 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
-
-/**
- * Operaciones CRUD comunes. Cada catalogo hereda de aqui y solo define su ruta (@RequestMapping).
- * GET /  GET /{id}  POST /  PUT /{id}  DELETE /{id}
- */
 public abstract class CrudController<T extends HasId> {
 
     protected final JpaRepository<T, Long> repo;
@@ -21,7 +16,6 @@ public abstract class CrudController<T extends HasId> {
         this.repo = repo;
     }
 
-    /** Gancho para completar o validar relaciones antes de guardar. */
     protected void prepare(T entity) {
     }
 
@@ -64,7 +58,6 @@ public abstract class CrudController<T extends HasId> {
         repo.deleteById(id);
     }
 
-    /** Busca la entidad referenciada (por su id) o responde 400 si no existe. */
     protected static <R extends HasId> R resolver(R ref, JpaRepository<R, Long> repo, String nombre) {
         if (ref == null || ref.getId() == null) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,

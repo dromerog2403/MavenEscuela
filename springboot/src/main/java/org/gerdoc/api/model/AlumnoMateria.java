@@ -23,7 +23,6 @@ public class AlumnoMateria implements HasId {
     @JoinColumn(name = "MATERIA_ID", nullable = false)
     private Materia materia;
 
-    // Puede ser nulo (materia aun sin calificar), igual que en la tabla
     @DecimalMin("0.00")
     @DecimalMax("99.99")
     @Column(name = "CALIFICACION", precision = 4, scale = 2)

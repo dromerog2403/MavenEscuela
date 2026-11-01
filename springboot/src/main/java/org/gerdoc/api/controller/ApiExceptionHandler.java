@@ -14,7 +14,6 @@ import java.util.Map;
 @RestControllerAdvice
 public class ApiExceptionHandler {
 
-    /** Integridad referencial: FK (registro con dependientes) o UNIQUE (alumno ya inscrito en la materia). */
     @ExceptionHandler(DataIntegrityViolationException.class)
     public ResponseEntity<Map<String, Object>> integridad(DataIntegrityViolationException ex) {
         return respuesta(HttpStatus.CONFLICT,
