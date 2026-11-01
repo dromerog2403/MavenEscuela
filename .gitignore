@@ -1,63 +1,39 @@
-# ==========================================
-# MAVEN
-# ==========================================
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-release.properties
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
 
-# ==========================================
-# INTELLIJ IDEA
-# ==========================================
-.idea/
-*.iml
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
 *.iws
+*.iml
+*.ipr
 
-# ==========================================
-# JAVA
-# ==========================================
-*.class
-*.log
-hs_err_pid*
-replay_pid*
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# ==========================================
-# SPRING BOOT
-# ==========================================
-spring-boot-devtools.properties
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# ==========================================
-# CONFIGURACIONES LOCALES Y SECRETOS
-# ==========================================
-.env
-.env.*
-!.env.example
+### VS Code ###
+.vscode/
 
-application-local.yaml
-application-local.yml
-application-local.properties
-
-# ==========================================
-# CERTIFICADOS Y CLAVES
-# ==========================================
-*.pem
-*.key
-*.p12
-*.pfx
-*.jks
-
-# ==========================================
-# SISTEMA OPERATIVO
-# ==========================================
+### Mac OS ###
 .DS_Store
-Thumbs.db
-Desktop.ini
-
-# ==========================================
-# BACKUPS
-# ==========================================
-*.bak
-*.tmp
-*.swp
-*~
